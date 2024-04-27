@@ -15,26 +15,55 @@ body{
     font-family: "Open Sans", sans-serif;
     background-color: #1e3a8a;
     transition: all 0.3s ease-in-out;
+    
+    
 }
+/* menu */
+#bar-icon{
+    width: 2rem;
+    height: 2rem;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: calc(15vh - 4rem);
+    background-color:white;
+    width: 100%;
+    /* opacity: 0.5; */
+}
+a {
+    text-decoration: none;
+}
+
+/* fin menu--------- */
 img{
     width: 40%;
     object-fit: cover; /**/
 }
+
 #container{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    background-image: url(img/crypto.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 
 }
 .coin-container{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 40%;
+    width: 100%;
+    
 }
 #coin-form{
     display: flex;
@@ -50,19 +79,20 @@ img{
     gap: 1rem;
 }
 .coin-input, .amount{
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     outline: none;
 }
 #form-btn{
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
     background-color:#60a5fa;
     color:white;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 #form-btn:hover{
     background-color: #3b82f6;
@@ -93,3 +123,142 @@ span{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    
+
+}
+#foote-page{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    color:black;
+    
+}
+
+
+
+@media(min-width:320px){
+    img{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+        list-style: none;
+    }
+    .coin-container-1{
+        border:1px solid white;
+        border-radius:1rem;
+        padding: 1rem;
+        background-color: rgba(37, 36, 36, 0.568)
+    }
+    
+}
+@media(min-width:768px){
+    #bar-icon{
+        display: none;
+    }
+    .nav-menu{
+        display: block;
+    }
+    .coin-container-1{
+        display: none;
+    }
+    .coin-container{
+        color: white;
+        display: block;
+        
+    }
+    #container{
+        background-image: none;
+    }
+    img{
+        display: block;
+    }
+}
+@media(min-width:1024px){
+    #form-btn{
+        cursor: pointer;
+    }
+    #container {
+        padding: 0 5rem;
+        height: 86vh;
+    }
+    footer{
+        height: 8vh;
+        align-items:center;
+        justify-content: center;
+    }
+    p#foote-page {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width:1440px){
+    .nav-bar{
+         padding: 2rem;
+         font-size: 1.5rem;
+    }
+    #container {
+        padding: 0 10rem;
+        height: 83vh;
+    }
+    footer{
+        height: calc(9vh -4rem);
+        align-items:center;
+        justify-content: center;
+    }
+    p#foote-page {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media(min-width:2560px){
+    .nav-bar{
+        padding: 3rem;
+        font-size: 2rem;
+        
+   }
+   #container {
+    padding: 0 21rem;
+    height: 83vh;
+    }
+    
+    .coin-container {
+        padding: 2rem;
+    }
+
+    #coin-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 3rem;
+    }
+    .coin-input, .amount {
+        font-size: 2rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+    #form-btn {
+        font-size: 2rem;
+    }
+    footer{
+        height: calc(10vh -4rem);
+        align-items:center;
+        justify-content: center;
+    }
+    p#foote-page {
+        font-size: 2rem;
+    }
+
+}
