@@ -12,9 +12,20 @@
     <title>Cotizador</title>
 </head>
 <body>
+    <nav class="nav-bar">
+        <h1> Cotizador</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" id="bar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+          
+        <ul class="nav-menu">
+            <li><a href="/index.html">home</a> </li>
+        </ul>
+
+    </nav>
     <div id="container">
         <img src="img/crypto.svg" alt="">
-        <div class="coin-container">
+        <div class="coin-container coin-container-1">
             <form action="" id="coin-form">
                 <div  class="coin-input-container">
                     <label for="coin"> ELIGE TU MONEDA</label>
@@ -26,7 +37,7 @@
                         <option value="VES">Bolivares</option>                       
                     </select>
                 </div>
-                <div  class="coin-input-container">
+                <div  class="coin-input-container ">
                     <label for="crypto"> Elige tu CryptoMoneda</label>
                     <select name="" id="crypto" class="coin-input">
                         <option  selected disabled value=""> Selecione una cryptoMoneda</option>
@@ -52,7 +63,9 @@
         </div>
     </div>
 
-
+    <footer>
+        <p id="foote-page"> Desarrollado por Merwil Vegas</p>
+    </footer>
 
 
     <script src="index.js"></script>
